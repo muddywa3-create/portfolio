@@ -1,18 +1,20 @@
-emailjs.init("PUBLIC_KEY_YAKO");
+emailjs.init("K6-mBgxngZJhMnCV0");
 
-document.getElementById("contact-form").addEventListener("submit", function(e) {
+const form = document.getElementById("contact-form");
+
+form.addEventListener("submit", function (e) {
   e.preventDefault();
 
   emailjs.sendForm(
-    "service_qckjh36",   // <-- HII NDIO SAHIHI
-    //"TEMPLATE_ID",
+    "service_qckjh36",
     "template_hmxu0rt",
     this
   ).then(
-    function() {
+    function () {
       alert("Ujumbe umetumwa kikamilifu!");
+      form.reset();
     },
-    function(error) {
+    function (error) {
       alert("Kuna shida kutuma ujumbe");
       console.log(error);
     }

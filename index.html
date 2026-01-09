@@ -1,62 +1,24 @@
 <!DOCTYPE html>
-<html lang="sw">
+<html>
 <head>
   <meta charset="UTF-8">
-  <title>Portfolio Yangu</title>
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
-
-  <!-- Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Contact Test</title>
 </head>
-
 <body>
 
-  <header>
-    <h1>Mohamed</h1>
-    <p>Beginner Web Developer</p>
-  </header>
+  <h2>Wasiliana Nami</h2>
 
-  <section>
-    <h2>Kuhusu Mimi</h2>
-    <p>Ninajifunza HTML, CSS na JavaScript.</p>
-  </section>
+  <form id="contact-form">
+    <input type="text" name="name" placeholder="Jina lako" required><br><br>
+    <input type="email" name="email" placeholder="Email yako" required><br><br>
+    <textarea name="message" placeholder="Ujumbe wako" required></textarea><br><br>
+    <button type="submit">Tuma</button>
+  </form>
 
-  <section>
-    <h2>Ujuzi</h2>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript (Basic)</li>
-    </ul>
-  </section>
+  <!-- EmailJS library -->
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
-  <section id="contact">
-    <h2>Wasiliana Nami</h2>
-
-    <!-- CONTACT FORM -->
-    <form id="contact-form">
-      <input type="text" name="name" placeholder="Jina lako" required>
-      <input type="email" name="email" placeholder="Email yako" required>
-      <textarea name="message" placeholder="Ujumbe wako" required></textarea>
-      <button type="submit">Tuma</button>
-    </form>
-
-    <p>Email: muddywa3@gmail.com</p>
-
-    <div class="icons">
-      <a href="https://wa.me/255686265395" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-      </a>
-      <a href="https://github.com/Mohamed" target="_blank">
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
-  </section>
-
-  <!-- EMAILJS -->
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <!-- JavaScript yako -->
   <script src="app.js"></script>
 
 </body>

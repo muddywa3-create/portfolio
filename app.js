@@ -1,29 +1,20 @@
-document.addEventListener("DOMContentLoaded", function () {
+emailjs.init("PUBLIC_KEY_YAKO");
 
-  
-  emailjs.init("JJtIKar5d6D6HWLOk");
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+  e.preventDefault();
 
-  const form = document.getElementById("contact-form");
-
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    emailjs.sendForm(
-      //"SERVICE_ID",
-      "service_ytvhlh9",
-     // "TEMPLATE_ID",
-     "tempelate_hmxu0rt",
-      this
-    ).then(
-      function () {
-        alert("Ujumbe umetumwa kikamilifu!");
-        form.reset();
-      },
-      function (error) {
-        alert("Kuna shida kutuma ujumbe");
-        console.log(error);
-      }
-    );
-  });
-
+  emailjs.sendForm(
+    "service_qckjh36",   // <-- HII NDIO SAHIHI
+    //"TEMPLATE_ID",
+    "template_hmxu0rt",
+    this
+  ).then(
+    function() {
+      alert("Ujumbe umetumwa kikamilifu!");
+    },
+    function(error) {
+      alert("Kuna shida kutuma ujumbe");
+      console.log(error);
+    }
+  );
 });

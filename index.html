@@ -1,25 +1,138 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Contact Test</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohamed | Web Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+ 
 </head>
 <body>
 
-  <h2>Wasiliana Nami</h2>
+  <!-- ===== Header / Hero Section ===== -->
+  <header class="hero">
+    <nav class="navbar">
+      <h1 class="logo">Mohamed</h1>
+      <ul class="nav-links">
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#Portifolio">Portifolio</a></li>
+        <li><a href="#service">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#Testimonial">Testimonial</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-  <form id="contact-form">
-    <input type="text" name="name" placeholder="Jina lako" required><br><br>
-    <input type="email" name="email" placeholder="Email yako" required><br><br>
-    <textarea name="message" placeholder="Ujumbe wako" required></textarea><br><br>
-    <button type="submit">Tuma</button>
-  </form>
+   <div class="hero-content">
+  <img src="IMG_9077.JPG~3.jpg" alt="Mohamed" class="profile-img">
 
-  <!-- EmailJS library -->
-  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <h2>Hello, I'm Mohamed 👋</h2>
+  <p>Web Developer | HTML • CSS • JavaScript</p>
+  <a href="#projects" class="btn">View My Work</a>
+</div>
 
-  <!-- JavaScript yako -->
+  </header>
+
+  <!-- ===== About Section ===== -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+  I am a web developer passionate about building clean, responsive, and user-friendly websites.
+  I focus on turning ideas into real digital products using HTML, CSS, and JavaScript.
+  I enjoy learning new technologies and continuously improving my skills to deliver better web experiences.
+</p>
+
+  </section>
+
+  <!-- ===== Skills Section ===== -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+      <li>Responsive Design</li>
+      <li>Git & GitHub</li>
+    </ul>
+  </section>
+
+  <!-- ===== Projects Section ===== -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>A personal portfolio website built with HTML, CSS, and JavaScript.</p>
+      </div>
+<div class="project-card">
+  <h3>Personal Portfolio</h3>
+  <p>
+    A modern and responsive personal portfolio website built with HTML, CSS,
+    and JavaScript to showcase my skills and projects.
+  </p>
+</div>
+
+<div class="project-card">
+  <h3>Business Landing Page</h3>
+  <p>
+    A clean landing page for a small business, designed to work well on both
+    mobile and desktop devices.
+  </p>
+</div>
+
+<div class="project-card">
+  <h3>JavaScript To-Do App</h3>
+  <p>
+    A simple to-do list application that allows users to add, complete,
+    and delete tasks using JavaScript.
+  </p>
+</div>
+
+     
+  </section>
+
+  <!-- ===== Contact Section ===== -->
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+<div class="social-links">
+  <a href="https://github.com/Muddywa3" target="_blank">
+    <i class="fab fa-github"></i>
+  </a>
+
+  <a href="https://linkedin.com/in/Mohamed" target="_blank">
+    <i class="fab fa-linkedin"></i>
+  </a>
+
+  <a href="https://wa.me/255XXXXXXXXX" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</div>
+
+
+
+
+
+
+  <div>
+  <p class="footer">© 2026 Mohamed | Web Developer</p>
+</div>
+
   <script src="app.js"></script>
-
 </body>
 </html>

@@ -1,22 +1,28 @@
-emailjs.init("K6-mBgxngZJhMnCV0");
+// ===== Smooth Scroll for Navigation Links =====
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
 
-const form = document.getElementById("contact-form");
+    const targetId = this.getAttribute('href');
+    const targetSection = document.querySelector(targetId);
 
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
-
-  emailjs.sendForm(
-    "service_qckjh36",
-    "template_hmxu0rt",
-    this
-  ).then(
-    function () {
-      alert("Ujumbe umetumwa kikamilifu!");
-      form.reset();
-    },
-    function (error) {
-      alert("Kuna shida kutuma ujumbe");
-      console.log(error);
+    if (targetSection) {
+      targetSection.scrollIntoView({
+        behavior: 'smooth'
+      });
     }
-  );
+  });
 });
+
+// ===== Contact Form (Basic Handling) =====
+const form = document.querySelector('.contact-form');
+
+if (form) {
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    alert('Thank you! Your message has been sent (demo).');
+    form.reset();
+  });
+}
+
